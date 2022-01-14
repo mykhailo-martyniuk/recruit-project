@@ -1,0 +1,55 @@
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__list {
+  display: flex;
+}
+
+.pagination__arrow {
+  cursor: pointer;
+  fill: getColor('grey-light-2');
+}
+
+.pagination__arrow--left {
+  margin-right: 25px;
+  transform: rotate(90deg);
+}
+
+.pagination__arrow--right {
+  margin-left: 25px;
+  transform: rotate(-90deg);
+}
+
+.pagination__arrow--active {
+  fill: getColor('blue-dark');
+}
+
+.pagination__number {
+  width: 21px;
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+  color: getColor('grey-light-2');
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.pagination__number--active {
+  color: getColor('white');
+  border-radius: 50%;
+  background-color: getColor('blue-dark');
+}
+
+.pagination__dots {
+  margin-right: 16px;
+  width: 21px;
+  display: flex;
+  justify-content: center;
+
+  color: getColor('grey-light-2');
+}

@@ -1,0 +1,57 @@
+.filters-form {
+  padding: 0 20px;
+}
+
+.filters-form__toggle {
+}
+
+.filters-form__switch-block-bottom
+{
+  margin-top: 30px;
+}
+.filters-form__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('black-light');
+}
+.filters-form__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: getColor('black-light');
+}
+
+
+
+.filters-form__age-block {
+  padding: 20px 0;
+}
+
+.filters-form__age-title {
+}
+
+.filters-form__line {
+}
+
+.filters-form__age-button-block {
+}
+.filters-form__age-button-span {
+}
+
+.filters-form__container{
+  padding: 20px 0;
+
+  &+& {
+    margin-top: 15px;
+  }
+}
+
+.filters-form__gender-buttons {
+  display: flex;
+  margin-top: 36px;
+}
+
+.filters-form__rectangle-button {
+  flex-grow: 1;
+}

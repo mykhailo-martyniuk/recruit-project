@@ -1,0 +1,18 @@
+.number-input {
+  width: 106px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  color: getColor('black-light');
+  border: 1px solid getColor('grey-light');
+  box-sizing: border-box;
+  //
+  //&::-webkit-outer-spin-button,
+  //&::-webkit-inner-spin-button {
+  //  /* display: none; <- Crashes Chrome on hover */
+  //  -webkit-appearance: none;
+  //  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  //}
+}

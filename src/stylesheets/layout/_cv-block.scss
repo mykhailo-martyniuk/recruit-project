@@ -1,0 +1,27 @@
+.cv-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-block__pagination {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $screen-size) {
+    margin-top: 30px;
+  }
+}
+.cv-block__element {
+  margin-bottom: 40px;
+  @media (max-width: $screen-size) {
+    margin-bottom: 0;
+  }
+}
+
+.cv-block__element + .cv-block__element {
+  @media (max-width: $screen-size) {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  & > *:not(:last-child) {
+    margin-right: 8px;
+    @media (max-width: $screen-size) {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (max-width: $screen-size) {
+    flex-direction: column;
+  }
+}

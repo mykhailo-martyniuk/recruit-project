@@ -1,0 +1,39 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+
+  background-color: getColor('grey-light');
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color $animation-duration $animation-function;
+
+  &:after {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+
+    display: inline-block;
+    content: '';
+    width: 14px;
+    background-color: getColor('grey-dark');
+    border-radius: 12px;
+
+    transition: transform $animation-duration $animation-function,
+      background-color $animation-duration $animation-function;
+  }
+}
+
+.switch-input-hidden {
+  position: absolute;
+}
+
+.switch-input-hidden:checked + .switch:after {
+  transform: translateX(13px);
+  background: getColor('blue-dark');
+}
+.switch-input-hidden:checked + .switch {
+  background: getColor('blue-light');
+}

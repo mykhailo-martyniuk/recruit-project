@@ -1,0 +1,41 @@
+.list-with-line {
+  display: flex;
+  @media (max-width: $screen-size) {
+
+    flex-wrap: wrap;
+  }
+}
+
+.list-with-line__item {
+  color: getColor('grey-light');
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+
+  &--active {
+    color: getColor('white');
+    font-weight: 600;
+  }
+
+  &--white{
+    color: getColor('white');
+  }
+
+  &:not(:last-child)::after {
+    margin: 0 15px;
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: getColor('white');
+  }
+}
+
+
+.list-with-line__link {
+  color: inherit;
+  font: inherit;
+}
+
+
+

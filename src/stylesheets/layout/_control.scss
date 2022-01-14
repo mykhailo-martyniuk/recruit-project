@@ -1,0 +1,47 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__lang {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+
+  color: getColor('grey-light');
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  & > *:nth-child(1) {
+    margin-right: 5px;
+  }
+  & > *:nth-child(2) {
+    margin-right: 10px;
+  }
+}
+
+.control__login {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('white');
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: inherit;
+    background-color: getColor('white');
+  }
+
+  @media (max-width: $screen-size) {
+    display: none;
+  }
+}
+
+.control__icon {
+  fill: getColor('white');
+  @media (max-width: $screen-size) {
+    fill: getColor('grey-light');
+  }
+}

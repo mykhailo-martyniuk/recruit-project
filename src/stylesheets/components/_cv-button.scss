@@ -1,0 +1,15 @@
+.cv-button {
+  padding: 12px;
+
+  border: 0.5px solid getColor('grey-light');
+  border-radius: 8px;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  @media (max-width: $screen-size) {
+    border: none;
+    padding: 0;
+  }
+}

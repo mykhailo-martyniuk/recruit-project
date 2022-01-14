@@ -1,0 +1,82 @@
+.heading {
+  position: relative;
+  margin-bottom: 44px;
+  margin-top: 70px;
+
+  @media (max-width: $screen-size) {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.heading__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: getColor('black-light');
+
+  @media (max-width: $screen-size) {
+    font-size: 24px;
+  }
+  &::after {
+    content: '';
+    margin: 16px 0;
+    display: block;
+    width: 170px;
+    border: 1px solid getColor('blue-dark');
+
+    @media (max-width: $screen-size) {
+
+      margin: 10px 0;
+    }
+  }
+}
+
+.heading__count {
+  color: getColor('blue');
+}
+
+.heading__text {
+  display: inline;
+  font-size: 16px;
+  line-height: 1.2;
+  color: getColor('grey-dark');
+
+  @media (max-width: $screen-size) {
+    font-size: 12px;
+    padding-right: 80px;
+  }
+}
+
+.heading__button {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: getColor('blue');
+
+  @media (max-width: $screen-size) {
+    padding: 0;
+    margin-left: 0;
+    text-align: start;
+  }
+}
+
+.heading__button-icon {
+  margin-left: 22px;
+  fill: getColor('blue');
+}
+
+.heading__filters-button {
+  display: none;
+  position: absolute;
+
+  @media (max-width: $screen-size) {
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+}

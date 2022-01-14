@@ -1,0 +1,29 @@
+.main {
+  padding-bottom: 120px;
+  @media (max-width: $screen-size) {
+    padding-bottom: 80px;
+
+  }
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__heading {
+}
+
+.main__bottom {
+  display: flex;
+}
+
+.main__bottom-first-el {
+  margin-right: 40px;
+  flex-grow: 2;
+
+
+  @media (max-width: $screen-size) {
+    margin-right: 0;
+  }
+}

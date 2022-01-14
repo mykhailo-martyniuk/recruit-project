@@ -1,0 +1,12 @@
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.vertical-list__item{
+
+  &+& {
+    margin-top: 14px;
+  }
+}

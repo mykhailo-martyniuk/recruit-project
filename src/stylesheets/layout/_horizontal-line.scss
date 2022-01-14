@@ -1,0 +1,13 @@
+.horizontal-line {
+  height: 1px;
+  width: 100%;
+  background-color: getColor('grey-light');
+  @media (max-width: $screen-size) {
+
+    height: 0.5px;
+  }
+}
+
+.horizontal-line--small {
+  border: 0.5px solid getColor('grey-light');
+}

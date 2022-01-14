@@ -1,0 +1,27 @@
+$colors: (
+  'white': #fff,
+  'grey': #a6a6a6,
+  'grey-light-2': #ADADAD,
+  'grey-light': #eaeaea,
+  'grey-dark': #5b5b5b,
+  'black-light': #202020,
+  'black-light-2':  #555556,
+  'black-dark': #1E1E1E,
+  'black': #000000,
+  'green': #4caf50,
+  'red': #f42c3c,
+  'orange': #fbc53c,
+  'blue': #0096c7,
+  'blue-dark': #000046,
+  'blue-light': #e6e6ff,
+  'yellow': #fff9e4,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+$animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-duration: 250ms;
+
+$screen-size: 720px;

@@ -1,0 +1,30 @@
+.list-with-title {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.list-with-title__title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: getColor('white');
+
+}
+
+.list-with-title__item {
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('white');
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+}
+
+.list-with-title__link {
+
+}

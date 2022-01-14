@@ -1,0 +1,146 @@
+.cv-card {
+  position: relative;
+
+  padding: 20px;
+
+  border: 1px solid getColor('grey-light');
+
+  @media (max-width: $screen-size) {
+    padding: 17px;
+  }
+}
+
+.cv-card__img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 1px solid getColor('black');
+
+  @media (max-width: $screen-size) {
+    margin-right: 17px;
+  }
+}
+
+.cv-card__position {
+  margin-bottom: 18px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: getColor('black-light');
+
+  @media (max-width: $screen-size) {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+}
+
+.cv-card__name-block {
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: baseline;
+
+  @media (max-width: $screen-size) {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+
+.cv-card__name {
+  margin-right: 26px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: getColor('black-light');
+
+  @media (max-width: $screen-size) {
+    margin-right: 0;
+    margin-bottom: 6px;
+    flex-direction: column;
+  }
+}
+
+.cv-card__location {
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('black-light');
+
+  @media (max-width: $screen-size) {
+    font-size: 13px;
+  }
+}
+
+.cv-card__icon-location {
+  margin-right: 10px;
+
+  transform: translateY(25%);
+  fill: getColor('blue-dark');
+}
+
+.cv-card__ex-work-block {
+  margin-bottom: 20px;
+}
+
+.cv-card__ex-work {
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('grey-dark');
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.cv-card__since-update {
+  margin-right: 20px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  color: getColor('grey');
+
+  @media (max-width: $screen-size) {
+    margin-right: 0;
+    margin-top: 25px;
+    order: 2;
+
+  }
+}
+
+.cv-card__ex-status-block {
+  display: flex;
+
+  @media (max-width: $screen-size) {
+    flex-direction: column;
+  }
+}
+
+.cv-card__status {
+  font-size: 12px;
+  line-height: 1.2;
+  color: getColor('green');
+
+}
+
+.cv-card__status-circle {
+  margin-right: 4px;
+
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: getColor('green');
+}
+
+.cv-card__button-block {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+
+
+  @media (max-width: $screen-size) {
+    bottom: 20px
+  }
+}

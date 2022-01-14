@@ -1,0 +1,18 @@
+.social-media-list {
+  display: flex;
+}
+
+.social-media-list__item {
+
+  &:not(:last-child) {
+    margin-right: 21px;
+    @media (max-width: $screen-size) {
+
+      margin-right: 18px;
+    }
+  }
+}
+
+.social-media-list__icon {
+
+}

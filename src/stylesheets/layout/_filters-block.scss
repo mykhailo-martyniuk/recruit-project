@@ -1,0 +1,41 @@
+.filters-block {
+  position: relative;
+  width: 363px;
+  display: block;
+  background-color: getColor('white');
+
+  @media (max-width: $screen-size) {
+    padding: 90px 20px 35px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+
+    z-index: 10;
+  }
+}
+
+.filters-block__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 1.3;
+  color: getColor('black-light');
+}
+
+.filters-block__close-button {
+  display: none;
+  padding: 8px;
+
+  box-shadow: 0 0 8px rgba(13, 74, 145, 0.15);
+  border-radius: 8px;
+  background-color: getColor('white');
+
+  @media (max-width: $screen-size) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

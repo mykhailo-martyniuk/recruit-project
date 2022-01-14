@@ -1,0 +1,17 @@
+.rectangle-button {
+  padding: 14px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: getColor('black-light');
+
+  border: 1px solid getColor('blue-dark');
+  transition: background-color $animation-duration $animation-function,
+    color $animation-duration $animation-function;
+}
+
+.rectangle-button--active {
+  background-color: getColor('blue-dark');
+  color: getColor('white');
+}
